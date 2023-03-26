@@ -1,0 +1,3 @@
+Посилання на проект https://project-blog.katierinamanko.repl.co/
+Ім'я користувача admin
+Пароль change-me
