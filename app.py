@@ -3,6 +3,7 @@ from blog import app
 from blog.models import Entry, db
 from blog.forms import EntryForm, LoginForm
 import functools
+from waitress import serve
 
 def login_required(view_func):
    @functools.wraps(view_func)
@@ -103,4 +104,4 @@ def delete_entry(entry_id):
        
    
 if __name__ == '__main__':
-    app.run(debug=True)
+     serve(app, host='127.0.0.1', port=5000, threads=1)
